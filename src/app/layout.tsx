@@ -1,6 +1,8 @@
+import { ReactNode } from 'react'
+
 import { pretendardFont } from 'src/styles'
 
-import { ReactNode } from 'react'
+import { Container } from '@shadow-panda/styled-system/jsx'
 
 import type { Metadata } from 'next'
 
@@ -21,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html className={pretendardFont.variable}>
-      <body>{children}</body>
+      <body>
+        <main>
+          <Container maxW="420px">{children}</Container>
+        </main>
+      </body>
     </html>
   )
 }
