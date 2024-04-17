@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "lokalise.i18n-ally",
+        "chakra-ui.panda-css-vscode",
+        "peterschmalfeldt.explorer-exclude",
+        "jock.svg",
+        "meganrogge.template-string-converter",
+        "wayou.vscode-todo-highlight",
+        "esbenp.prettier-vscode",
+        "codeandstuff.package-json-upgrade",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-rename-tag",
+        "exodiusstudios.comment-anchors"
+    ]
+}

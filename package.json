@@ -1,22 +1,38 @@
 {
-  "name": "workout-routine-program",
+  "name": "plco-admin-migration",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prepare": "panda codegen",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "sort-package-json": "npx sort-package-json package.json",
+    "start": "next start"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4"
+    "@apollo/client": "3.9.11",
+    "@apollo/experimental-nextjs-app-support": "^0.10.0",
+    "next": "14.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.3",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.2.5",
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "@pandacss/dev": "^0.37.2",
+    "@pandacss/eslint-plugin": "^0.1.1",
+    "@pandacss/studio": "^0.37.2",
+    "@parcel/watcher": "^2.4.1",
+    "eslint-config-jklasd2001s": "^0.0.1",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
   }
 }

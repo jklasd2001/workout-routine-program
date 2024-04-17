@@ -1,0 +1,20 @@
+{
+  "create react component": {
+    "scope": "typescriptreact",
+    "prefix": "ccc",
+    "body": [
+      "interface ${1}Props {",
+      "}",
+      "",
+      "export const ${1} = (props: ${1}Props) => {",
+      "  return <div />",
+      "}"
+    ],
+    "description": ""
+  },
+  "arrow function": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "afn",
+    "body": ["const $1 = ($2)=> {", "$3", "}"]
+  }
+}
