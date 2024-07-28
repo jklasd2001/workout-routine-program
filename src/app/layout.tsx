@@ -7,6 +7,8 @@ import { pretendardFont } from 'src/styles'
 
 import type { Metadata } from 'next'
 
+import { PageLayout } from 'src/components/page-layout'
+
 import favicon from '/public/favicon.ico'
 
 import 'src/styles/globals.css'
@@ -19,15 +21,14 @@ export const metadata: Metadata = {
 
 const Layout = async ({ children }: { children: ReactNode }) => {
   const locale = await getLocale()
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages()
 
   return (
     <html lang={locale} className={pretendardFont.variable}>
       <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <PageLayout>{children}</PageLayout>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

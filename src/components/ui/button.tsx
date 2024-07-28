@@ -1,12 +1,11 @@
 import { forwardRef, Fragment } from 'react'
 
-import { Center, styled } from 'styled-system/jsx'
-
 import { Spinner } from 'src/components/ui'
 import {
   Button as StyledButton,
   type ButtonProps as StyledButtonProps,
 } from 'src/components/ui/primitives'
+import { Center, styled } from 'styled-system/jsx'
 
 interface ButtonLoadingProps {
   loading?: boolean

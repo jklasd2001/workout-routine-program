@@ -18,7 +18,16 @@ interface PageLayoutProps {
  */
 export const PageLayout = ({ children }: PageLayoutProps) => {
   return (
-    <Container css={{ maxW: '600px' }}>
+    <Container
+      css={{
+        maxW: '600px',
+        minH: 'screen',
+        bg: 'white',
+        borderLeft: '1px solid token(colors.bg.disabled)',
+        borderRight: '1px solid token(colors.bg.disabled)',
+        position: 'relative',
+      }}
+    >
       <Header />
 
       <styled.main>{children}</styled.main>

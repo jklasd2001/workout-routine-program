@@ -1,8 +1,8 @@
 'use client'
 import { Dialog } from '@ark-ui/react/dialog'
-import { type DialogVariantProps, dialog } from 'styled-system/recipes'
 
 import { createStyleContext } from 'src/lib/create-style-context'
+import { type DialogVariantProps, dialog } from 'styled-system/recipes'
 
 import type { Assign } from '@ark-ui/react'
 import type { ComponentProps, HTMLStyledProps } from 'styled-system/types'

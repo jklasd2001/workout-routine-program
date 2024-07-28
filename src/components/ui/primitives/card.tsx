@@ -1,8 +1,9 @@
 'use client'
+
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory'
-import { type CardVariantProps, card } from 'styled-system/recipes'
 
 import { createStyleContext } from 'src/lib/create-style-context'
+import { type CardVariantProps, card } from 'styled-system/recipes'
 
 import type { Assign, PolymorphicProps } from '@ark-ui/react'
 import type { ComponentProps, HTMLStyledProps } from 'styled-system/types'

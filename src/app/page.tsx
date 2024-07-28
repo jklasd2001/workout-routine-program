@@ -1,13 +1,20 @@
 import { useTranslations } from 'next-intl'
 
-import { Button } from 'src/components/ui'
+import { Card } from 'src/components/ui'
 import { Box } from 'styled-system/jsx'
 
 const Home = () => {
-  const t = useTranslations('HomePage')
+  const t = useTranslations()
+
   return (
     <Box>
-      <Button>{t('title')}</Button>
+      <Card.Root>
+        <Card.Header>asdasd</Card.Header>
+
+        <Card.Body>aspodkaspok</Card.Body>
+
+        <Card.Footer>aspodkaspok</Card.Footer>
+      </Card.Root>
     </Box>
   )
 }
