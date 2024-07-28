@@ -1,5 +1,13 @@
-export default async function Home() {
-  // const { rows } = await sql`SELECT * from CARTS`
+import { Box } from 'styled-system/jsx'
 
-  return <main>sdasdsa</main>
+import { Button } from 'src/components/ui'
+
+const Home = () => {
+  return (
+    <Box>
+      <Button>aspodkasopkd</Button>
+    </Box>
+  )
 }
+
+export default Home

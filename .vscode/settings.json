@@ -13,7 +13,7 @@
       "**/node_modules": true
     },
     "explorerExclude.backup": {},
-    "npm.packageManager": "pnpm",
+    "npm.packageManager": "bun",
     "i18n-ally.localesPaths": [
       "src/messages",
     ],

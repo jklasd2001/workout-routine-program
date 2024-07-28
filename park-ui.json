@@ -1,0 +1,9 @@
+{
+  "$schema": "https://park-ui.com/registry/latest/schema.json",
+  "importAlias": "src/*",
+  "jsFramework": "react",
+  "outputPaths": {
+    "componentsDir": "src/components/ui",
+    "libDir": "src/lib"
+  }
+}
