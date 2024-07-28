@@ -13,6 +13,4 @@ export default defineConfig({
     extend: {},
   },
   jsxFramework: 'react',
-  importMap: '@shadow-panda/styled-system',
-  outdir: '@shadow-panda/styled-system',
 })

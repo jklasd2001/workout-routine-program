@@ -16,18 +16,18 @@ export const metadata: Metadata = {
   icons: [{ rel: 'icon', url: favicon.src }],
 }
 
-export default function RootLayout({
+const Layout = ({
   children,
-}: Readonly<{
+}: {
   children: ReactNode
-}>) {
+}) => {
   return (
     <html className={pretendardFont.variable}>
       <body>
-        <main>
-          <Container maxW="420px">{children}</Container>
-        </main>
+        <Container css={{maxW: '600px', borderRight: '1px solid #dd9c4f', borderLeft: '1px solid #dd9c4f'}}>{children}</Container>      
       </body>
     </html>
   )
 }
+
+export default Layout

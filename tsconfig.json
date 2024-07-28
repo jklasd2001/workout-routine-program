@@ -21,9 +21,6 @@
       "src/*": [
         "./src/*"
       ],
-      "@shadow-panda/*": [
-        "./@shadow-panda/*"
-      ],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
