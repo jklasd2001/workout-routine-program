@@ -1,11 +1,13 @@
-import { Box } from 'styled-system/jsx'
+import { useTranslations } from 'next-intl'
 
 import { Button } from 'src/components/ui'
+import { Box } from 'styled-system/jsx'
 
 const Home = () => {
+  const t = useTranslations('HomePage')
   return (
     <Box>
-      <Button>aspodkasopkd</Button>
+      <Button>{t('title')}</Button>
     </Box>
   )
 }

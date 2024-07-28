@@ -1,4 +1,7 @@
+import createNextIntlPlugin from 'next-intl/plugin'
 import nextPwa from 'next-pwa'
+
+const withNextIntl = createNextIntlPlugin()
 
 const withPWA = nextPwa({
   dest: 'public',
@@ -7,10 +10,12 @@ const withPWA = nextPwa({
 })
 
 /** @type {import('next').NextConfig} */
-const nextConfig = withPWA({
+const defaultConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-})
+}
 
-export default nextConfig
+const config = withPWA(withNextIntl(defaultConfig))
+
+export default config

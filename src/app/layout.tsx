@@ -1,8 +1,9 @@
 import { ReactNode } from 'react'
 
-import { pretendardFont } from 'src/styles'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages } from 'next-intl/server'
 
-import { Container } from '@shadow-panda/styled-system/jsx'
+import { pretendardFont } from 'src/styles'
 
 import type { Metadata } from 'next'
 
@@ -16,15 +17,17 @@ export const metadata: Metadata = {
   icons: [{ rel: 'icon', url: favicon.src }],
 }
 
-const Layout = ({
-  children,
-}: {
-  children: ReactNode
-}) => {
+const Layout = async ({ children }: { children: ReactNode }) => {
+  const locale = await getLocale()
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages()
+
   return (
-    <html className={pretendardFont.variable}>
+    <html lang={locale} className={pretendardFont.variable}>
       <body>
-        <Container css={{maxW: '600px', borderRight: '1px solid #dd9c4f', borderLeft: '1px solid #dd9c4f'}}>{children}</Container>      
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   )

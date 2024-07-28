@@ -7,6 +7,7 @@ import {
   forwardRef,
   useContext,
 } from 'react'
+
 import { cx } from 'styled-system/css'
 import { styled } from 'styled-system/jsx'
 
@@ -20,7 +21,7 @@ type Slot<R extends Recipe> = keyof ReturnType<R>
 export const createStyleContext = <R extends Recipe>(recipe: R) => {
   const StyleContext = createContext<Record<Slot<R>, string> | null>(null)
 
-  const withRootProvider = <P extends {}>(Component: ElementType) => {
+  const withRootProvider = <P extends object>(Component: ElementType) => {
     const StyledComponent = (props: P) => {
       const [variantProps, otherProps] = recipe.splitVariantProps(props)
       const slotStyles = recipe(variantProps) as Record<Slot<R>, string>
