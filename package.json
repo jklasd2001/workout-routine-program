@@ -1,17 +1,17 @@
 {
-  "name": "plco-admin-migration",
+  "name": "workout-routine-program",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "panda codegen",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "prepare": "panda codegen",
     "sort-package-json": "npx sort-package-json package.json",
     "start": "next start"
   },
   "dependencies": {
-    "@ark-ui/react": "^3.6.1",
+    "@ark-ui/react": "^3.6.2",
     "@radix-ui/react-slot": "^1.1.0",
     "lucide-react": "^0.417.0",
     "next": "14.2.5",
@@ -23,13 +23,13 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.2",
-    "@graphql-codegen/client-preset": "^4.3.2",
+    "@graphql-codegen/client-preset": "^4.3.3",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@pandacss/dev": "^0.44.0",
     "@pandacss/eslint-plugin": "^0.1.9",
     "@pandacss/studio": "^0.44.0",
     "@parcel/watcher": "^2.4.1",
-    "@park-ui/panda-preset": "^0.40.0",
+    "@park-ui/panda-preset": "^0.41.0",
     "@types/node": "^22.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

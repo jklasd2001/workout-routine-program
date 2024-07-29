@@ -16,6 +16,6 @@ const defaultConfig = {
   },
 }
 
-const config = withPWA(withNextIntl(defaultConfig))
+const config = withNextIntl(defaultConfig)
 
 export default config

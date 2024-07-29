@@ -2,7 +2,7 @@ import { ArrowLeft } from 'lucide-react'
 
 import { styled } from 'styled-system/jsx'
 
-import { Button, IconButton } from '../ui'
+import { IconButton } from '../ui'
 
 export const Header = () => {
   return (
@@ -10,8 +10,6 @@ export const Header = () => {
       <IconButton aria-label="Back press" variant="outline" size="2xl">
         <ArrowLeft />
       </IconButton>
-
-      <Button loading={true} />
     </styled.header>
   )
 }

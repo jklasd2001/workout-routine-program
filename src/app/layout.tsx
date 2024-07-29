@@ -1,17 +1,19 @@
 import { ReactNode } from 'react'
 
+import aa from '@park-ui/panda-preset'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
+import { PageLayout } from 'src/components/page-layout'
 import { pretendardFont } from 'src/styles'
 
 import type { Metadata } from 'next'
 
-import { PageLayout } from 'src/components/page-layout'
-
 import favicon from '/public/favicon.ico'
 
 import 'src/styles/globals.css'
+
+console.log(aa.theme?.extend?.tokens?.colors?.red)
 
 export const metadata: Metadata = {
   title: '운동 기록',

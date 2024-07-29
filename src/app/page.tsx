@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import { Card } from 'src/components/ui'
+import { Button, Card } from 'src/components/ui'
 import { Box } from 'styled-system/jsx'
 
 const Home = () => {
@@ -8,6 +8,8 @@ const Home = () => {
 
   return (
     <Box>
+      <Button loading={true} />
+
       <Card.Root>
         <Card.Header>asdasd</Card.Header>
 
