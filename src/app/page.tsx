@@ -1,24 +1,32 @@
-import { useTranslations } from 'next-intl'
-
-import { Button, Card } from 'src/components/ui'
+import { Heading } from 'src/components/ui/heading'
 import { Box } from 'styled-system/jsx'
 
-const Home = () => {
-  const t = useTranslations()
+// import { RoutineCard } from './components/routine-card'
+
+const Home = async () => {
+  // const data = await getRoutines()
+
+  // console.log(data)
 
   return (
-    <Box>
-      <Button loading={true} />
-
-      <Card.Root>
-        <Card.Header>asdasd</Card.Header>
-
-        <Card.Body>aspodkaspok</Card.Body>
-
-        <Card.Footer>aspodkaspok</Card.Footer>
-      </Card.Root>
+    <Box css={{}}>
+      <Heading size="lg" css={{ mb: 2 }}>
+        내 루틴
+      </Heading>
     </Box>
   )
 }
+
+// export const getRoutines = async () => {
+//   const res = await fetch('http://localhost:3000/routines')
+
+//   console.log(res.ok)
+
+//   if (!res.ok) {
+//     throw new Error('Failed to fetch data')
+//   }
+
+//   return res.json()
+// }
 
 export default Home

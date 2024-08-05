@@ -1,17 +1,11 @@
-import { Center, styled } from 'styled-system/jsx'
+import { styled } from 'styled-system/jsx'
+
+import { Tabs } from './components/tabs'
 
 export const Footer = () => {
   return (
-    <styled.footer
-      css={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        h: '60px',
-        borderTop: '1px solid black',
-      }}
-    >
-      <Center></Center>
+    <styled.footer css={{ borderTop: '1px solid black' }}>
+      <Tabs />
     </styled.footer>
   )
 }

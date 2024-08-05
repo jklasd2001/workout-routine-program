@@ -8,13 +8,15 @@
     "lint": "next lint",
     "prepare": "panda codegen",
     "sort-package-json": "npx sort-package-json package.json",
-    "start": "next start"
+    "clean": "rm -rf node_modules bun.lockb"
   },
   "dependencies": {
     "@ark-ui/react": "^3.6.2",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-virtual": "^3.8.4",
     "lucide-react": "^0.424.0",
     "next": "14.2.5",
+    "next-auth": "^4.24.7",
     "next-intl": "^3.17.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

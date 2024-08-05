@@ -1,19 +1,19 @@
 import { ReactNode } from 'react'
 
-import aa from '@park-ui/panda-preset'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
 import { PageLayout } from 'src/components/page-layout'
+import { AuthSession } from 'src/providers/auth-session'
 import { pretendardFont } from 'src/styles'
 
 import type { Metadata } from 'next'
 
+import { AuthProvider } from 'src/providers/auth-provider'
+
 import favicon from '/public/favicon.ico'
 
 import 'src/styles/globals.css'
-
-console.log(aa.theme?.extend?.tokens?.colors?.red)
 
 export const metadata: Metadata = {
   title: '운동 기록',
@@ -28,9 +28,13 @@ const Layout = async ({ children }: { children: ReactNode }) => {
   return (
     <html lang={locale} className={pretendardFont.variable}>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <PageLayout>{children}</PageLayout>
-        </NextIntlClientProvider>
+        <AuthSession>
+          <NextIntlClientProvider messages={messages}>
+            <AuthProvider>
+              <PageLayout>{children}</PageLayout>
+            </AuthProvider>
+          </NextIntlClientProvider>
+        </AuthSession>
       </body>
     </html>
   )

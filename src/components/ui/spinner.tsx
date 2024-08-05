@@ -1,10 +1,6 @@
 import { forwardRef } from 'react'
-
-import {
-  Spinner as StyledSpinner,
-  type SpinnerProps as StyledSpinnerProps,
-} from 'src/components/ui/primitives'
 import { styled } from 'styled-system/jsx'
+import { Spinner as StyledSpinner, type SpinnerProps as StyledSpinnerProps } from './styled/spinner'
 
 export interface SpinnerProps extends StyledSpinnerProps {
   /**

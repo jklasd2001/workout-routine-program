@@ -1,8 +1,9 @@
 'use client'
 import { Checkbox } from '@ark-ui/react/checkbox'
 
-import { createStyleContext } from 'src/lib/create-style-context'
 import { type CheckboxVariantProps, checkbox } from 'styled-system/recipes'
+
+import { createStyleContext } from './utils/create-style-context'
 
 import type { Assign } from '@ark-ui/react'
 import type { ComponentProps, HTMLStyledProps } from 'styled-system/types'
