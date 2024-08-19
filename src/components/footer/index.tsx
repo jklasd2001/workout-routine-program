@@ -4,7 +4,7 @@ import { Tabs } from './components/tabs'
 
 export const Footer = () => {
   return (
-    <styled.footer css={{ borderTop: '1px solid black' }}>
+    <styled.footer css={{ borderTop: '1px solid token(colors.gray.9)' }}>
       <Tabs />
     </styled.footer>
   )

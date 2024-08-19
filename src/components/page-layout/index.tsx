@@ -22,17 +22,19 @@ export const PageLayout = ({ children }: PageLayoutProps) => {
       css={{
         maxW: '600px',
         minH: 'screen',
-        bg: 'white',
+        bg: 'black',
         display: 'flex',
         flexDir: 'column',
         borderLeft: '1px solid token(colors.bg.disabled)',
         borderRight: '1px solid token(colors.bg.disabled)',
         position: 'relative',
+        px: 0,
+        color: 'accent.1',
       }}
     >
       <Header />
 
-      <styled.main css={{ flexGrow: 1 }}>{children}</styled.main>
+      <styled.main css={{ flexGrow: 1, p: 3 }}>{children}</styled.main>
 
       <Footer />
     </Container>

@@ -14,6 +14,14 @@ const defaultConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'phinf.pstatic.net',
+      },
+    ],
+  },
 }
 
 const config = withNextIntl(defaultConfig)

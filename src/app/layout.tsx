@@ -9,8 +9,6 @@ import { pretendardFont } from 'src/styles'
 
 import type { Metadata } from 'next'
 
-import { AuthProvider } from 'src/providers/auth-provider'
-
 import favicon from '/public/favicon.ico'
 
 import 'src/styles/globals.css'
@@ -30,9 +28,9 @@ const Layout = async ({ children }: { children: ReactNode }) => {
       <body>
         <AuthSession>
           <NextIntlClientProvider messages={messages}>
-            <AuthProvider>
-              <PageLayout>{children}</PageLayout>
-            </AuthProvider>
+            {/* <AuthProvider> */}
+            <PageLayout>{children}</PageLayout>
+            {/* </AuthProvider> */}
           </NextIntlClientProvider>
         </AuthSession>
       </body>

@@ -6,15 +6,16 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "prepare": "panda codegen",
+    "prepare": "panda codegen --clean",
     "sort-package-json": "npx sort-package-json package.json",
-    "clean": "rm -rf node_modules bun.lockb"
+    "clean": "rm -rf node_modules bun.lockb",
+    "studio": "panda studio"
   },
   "dependencies": {
-    "@ark-ui/react": "^3.6.2",
+    "@ark-ui/react": "^3.7.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@tanstack/react-virtual": "^3.8.4",
-    "lucide-react": "^0.424.0",
+    "@tanstack/react-virtual": "^3.8.6",
+    "lucide-react": "^0.427.0",
     "next": "14.2.5",
     "next-auth": "^4.24.7",
     "next-intl": "^3.17.2",
@@ -27,12 +28,12 @@
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/client-preset": "^4.3.3",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@pandacss/dev": "^0.44.0",
+    "@pandacss/dev": "^0.45.0",
     "@pandacss/eslint-plugin": "^0.1.9",
-    "@pandacss/studio": "^0.44.0",
+    "@pandacss/studio": "^0.45.0",
     "@parcel/watcher": "^2.4.1",
     "@park-ui/panda-preset": "^0.42.0",
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vercel/postgres": "^0.9.0",
@@ -40,6 +41,6 @@
     "eslint-config-jklasd2001s": "^0.0.1",
     "next-pwa": "^5.6.0",
     "typescript": "^5.5.4",
-    "vercel": "^35.2.3"
+    "vercel": "^35.2.4"
   }
 }
