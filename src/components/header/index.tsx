@@ -1,5 +1,7 @@
 'use client'
 
+import { useMemo } from 'react'
+
 import { useTranslations } from 'next-intl'
 
 import { usePathname } from 'src/navigation'
@@ -33,17 +35,21 @@ export const ROUTE_CONFIG = {
 export const ROUTE_OPTIONS = Object.values(ROUTE_CONFIG).find((route) => route.path === '/')?.key
 
 export const getPathnameKey = (pathname: string) => {
-                                b  
+  //
 }
 
 export const Header = () => {
   const t = useTranslations()
   const pathname = usePathname()
 
+  const names = useMemo(() => {
+    return pathname.split('/').filter((x) => x)
+  }, [pathname])
+
   return (
     <styled.header css={{ p: 3 }}>
       <Heading size="xl" css={{ color: 'white' }}>
-        {t('routines.add.dpoiskjd')}
+        홈
       </Heading>
     </styled.header>
   )

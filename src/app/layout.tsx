@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
 import { PageLayout } from 'src/components/page-layout'
+import { AuthProvider } from 'src/providers/auth-provider'
 import { AuthSession } from 'src/providers/auth-session'
 import { pretendardFont } from 'src/styles'
 
@@ -28,9 +29,9 @@ const Layout = async ({ children }: { children: ReactNode }) => {
       <body>
         <AuthSession>
           <NextIntlClientProvider messages={messages}>
-            {/* <AuthProvider> */}
-            <PageLayout>{children}</PageLayout>
-            {/* </AuthProvider> */}
+            <AuthProvider>
+              <PageLayout>{children}</PageLayout>
+            </AuthProvider>
           </NextIntlClientProvider>
         </AuthSession>
       </body>

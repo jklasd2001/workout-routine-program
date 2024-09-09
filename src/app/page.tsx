@@ -3,7 +3,7 @@ import { Box } from 'styled-system/jsx'
 
 // import { RoutineCard } from './components/routine-card'
 
-const Home = async () => {
+const Home = () => {
   // const data = await getRoutines()
 
   // console.log(data)

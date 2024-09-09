@@ -20,5 +20,3 @@ export const ROUTE_CONFIG = {
     path: '/routine/[id]',
   },
 } as const
-
-export const ROUTE_OPTIONS = Object.values(ROUTE_CONFIG).find((route) => route.path === '/')?.key

@@ -34,7 +34,7 @@ const TAB_OPTIONS = [
 
 export const Tabs = () => {
   return (
-    <Flex css={{}}>
+    <Flex>
       {TAB_OPTIONS.map((tab) => (
         <Tab key={tab.href} icon={tab.icon} label={tab.label} href={tab.href} />
       ))}
